@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../static/logo-transparent-1000px.png" />
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>   
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Hayawani - Authentication page</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid" style="background-color:rgb(37, 58, 43);">
+            <picture>
+                <source media="(min-width: 850px)" srcset="../static/logo-transparent-500x300px.png " />
+                <source media="(max-width: 850px)"  srcset="../static/logo-transparent-500px.png"/>
+                <img src="../static/logo-transparent-500x300px.png" alt="Logo" class="logo" />
+              </picture>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container col-lg-5 col-md-8 col-sm-12 mt-4 p-4">
+        <h2 style="text-align:center;margin-bottom:40px"> Connexion</h2>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Nom d'utilisateur</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Entrer votre nom d'utilisateur">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Mot de passe</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+            </div>
+            <div style="float:right" class="row m-auto">
+                <a href="#">Mot de passe oublié ?</a>
+             </div>
+            <button type="submit" style="background-color: rgb(37, 58, 43);padding:8px;color:rgb(156, 166, 13);margin-top: 20px;width:100%">Connexion</button>
+        </form>
+        <div  style="text-align:center" class="row m-auto pt-3">
+            <p>Pas encore inscrit ? <a href="#">S&#39;inscrire gratuitement.</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
